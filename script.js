@@ -31,19 +31,19 @@ async function getWeather(city) {
         wind.innerHTML = Math.round(data.wind.speed) + " km/h";
     
         if(data.weather[0].main == "Clouds"){
-            weatherImg.src = "/images/cloud.png";
+            weatherImg.src = "images/cloud.png";
         }else if(data.weather[0].main == "Clear"){
-            weatherImg.src = "/images/sun.png";
+            weatherImg.src = "images/sun.png";
         }else if(data.weather[0].main == "Rain"){
-            weatherImg.src = "/images/rain.png";
+            weatherImg.src = "images/rain.png";
         }else if(data.weather[0].main == "Snow"){    
-            weatherImg.src = "/images/snow.png";
+            weatherImg.src = "images/snow.png";
         }else if(data.weather[0].main == "Mist"){
-            weatherImg.src = "/images/mist.png";
+            weatherImg.src = "images/mist.png";
         }else if(data.weather[0].main == "Wind"){
-            weatherImg.src = "/images/wind.png";
+            weatherImg.src = "images/wind.png";
         }else if(data.weather[0].main == "Thunderstorm"){
-            weatherImg.src = "/images/tl.webp";
+            weatherImg.src = "images/tl.webp";
         }
         weatherContainer.style.display = "block";
     }
